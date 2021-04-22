@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/style.css">
+        <title>MyBookList App</title>
+    </head>
+
+    <body>
+        <div id="alert-container">
+        </div>
+
+        <div class="modal_overlayer"></div>
+        <div class="modal_container">
+            <div class="container">
+                <h1 class="display-4 text-center"><i class="fas fa-book-open text-primary"></i> Staff <span class="text-success">List</span></h1>
+                <button class="btn btn-warning btn-block" id="newUser">Add New User</button>
+                <div class="form_container container">
+                    <div class="form_content">
+                        <form id="user-form">
+                            <div class="form-group">
+                                <label for="firstName">First Name</label>
+                                <input type="text" id="firstName" class="form-control" placeholder="First Name">
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName">Last Name</label>
+                                <input type="text" id="lastName" class="form-control" placeholder="Last Name">
+                            </div>
+                            <div class="form-group">
+                                <label for="position">Position</label>
+                                <input type="text" id="position" class="form-control" placeholder="Position">
+                            </div>
+                            <div class="form-group">
+                                <label for="salary">Salary</label>
+                                <input type="number" id="salary" class="form-control" placeholder="Salary">
+                            </div>
+                            <input type="submit" value="Add User" class="btn btn-success btn-block" id="addUser">
+                            <div class="btn btn-success btn-block" data-type="editingBtn" id="editButton">Edit User</div>
+                        </form>
+                        <div class="close_content"><i class="fas fa-times"></i></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container mt-4">
+            <table class="table table-striped mt-5">
+                <thead>
+                    <tr>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Position</th>
+                        <th>Salary</th>
+                        <th>User ID</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="user-list"></tbody>
+            </table>
+        </div>
+
+        <div id="users_number"></div>
+
+        <script src="./JS/script.js"></script>
+        <script src="https://kit.fontawesome.com/565a01e64a.js" crossorigin="anonymous"></script>
+    </body>
+</html>

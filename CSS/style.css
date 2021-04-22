@@ -1,0 +1,84 @@
+#alert-container {
+    position: fixed;
+    right: 10px;
+    top: 10px;
+    width: 300px;
+}
+
+
+.form_container {
+    position: relative;
+    position: fixed;
+    top: 84px;
+    left: 15%;
+    width: 70%;
+    z-index: 11;
+    box-shadow: 0 0 8px rgb(0 0 0 / 30%);
+    display: none;
+}
+
+.form_container.active {
+    display: block;
+    transition: .3s ease-in-out;
+}
+
+
+.form_content .close_content {
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    right: 20px;
+    top: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+.close_content .fa-times {
+    color: #33333390;
+}
+
+.close_content .fa-times:hover {
+    color: #666666;
+}
+.video_overlayer.active {
+    display: block;
+}
+
+.form_content {
+    width: 100%;
+    background: #ffffff;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.form_container {
+    position: relative;
+    position: fixed;
+    top: 46%;
+    width: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 11;
+    box-shadow: 0 0 8px rgb(0 0 0 / 30%);
+    display: none;
+}
+
+.form_container.active {
+    display: block;
+    transition: .3s ease-in-out;
+}
+
+#editButton {
+    display: none;
+}
+
+#addUser{
+    display: none;
+}
+
